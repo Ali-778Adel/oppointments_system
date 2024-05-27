@@ -32,6 +32,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             children: [
               LogoAndLabelWidget(),
               BackgroundLogoAndImageWidget1(),
+              
               GetStartedButtonWidget(),
             ],
           ),
