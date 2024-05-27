@@ -22,18 +22,24 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-      child: Padding(
-        padding: EdgeInsets.only(top: 30.h,bottom: 30.h),
-        child:const SingleChildScrollView(
-          child:  Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              LogoAndLabelWidget(),
-              BackgroundLogoAndImageWidget1(),
-              GetStartedButtonWidget(),
-            ],
+        body: SafeArea(
+      child: SingleChildScrollView(
+        child: SizedBox(
+          height: .95.sh,
+          child: Padding(
+            padding: EdgeInsets.only(top: 30.h, bottom: 30.h),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const LogoAndLabelWidget(),
+                SizedBox(
+                  height: 10.h,
+                ),
+                const BackgroundLogoAndImageWidget(),
+                const GetStartedButtonWidget(),
+              ],
+            ),
           ),
         ),
       ),
