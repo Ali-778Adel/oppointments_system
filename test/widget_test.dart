@@ -7,6 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:oppointments_sysytem/core/routing/routes_config.dart';
 import 'package:oppointments_sysytem/doc_app.dart';
 
 import 'package:oppointments_sysytem/main.dart';
@@ -14,7 +15,7 @@ import 'package:oppointments_sysytem/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const DocDocApp());
+    await tester.pumpWidget( DocDocApp(routesConfigs: RoutesConfigs(),));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
