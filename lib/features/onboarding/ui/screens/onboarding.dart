@@ -22,6 +22,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       body: SafeArea(
       child: Padding(
         padding: EdgeInsets.only(top: 30.h,bottom: 30.h),
@@ -35,6 +36,26 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               
               GetStartedButtonWidget(),
             ],
+=======
+        body: SafeArea(
+      child: SingleChildScrollView(
+        child: SizedBox(
+          height: .95.sh,
+          child: Padding(
+            padding: EdgeInsets.only(top: 30.h, bottom: 30.h),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const LogoAndLabelWidget(),
+                SizedBox(
+                  height: 10.h,
+                ),
+                const BackgroundLogoAndImageWidget(),
+                const GetStartedButtonWidget(),
+              ],
+            ),
+>>>>>>> 8e8151b63ee6917841138b49260cfc5a064f4945
           ),
         ),
       ),

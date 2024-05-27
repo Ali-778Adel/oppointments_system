@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:oppointments_sysytem/core/helper/extensions.dart';
+import 'package:oppointments_sysytem/core/routing/routes.dart';
 
 import '../../../../core/theming/colors/colors.dart';
 
@@ -20,7 +22,9 @@ class GetStartedButtonWidget extends StatelessWidget {
           shape: MaterialStateProperty.all(RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10.r))),
         ),
-        onPressed: () {},
+        onPressed: () {
+          context.pushNamedRoute( AppRoutes.login);
+        },
         child: Text(
           "Get Started",
           style: Theme.of(context).textTheme.labelMedium,
