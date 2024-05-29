@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:oppointments_sysytem/core/routing/routes.dart';
+import 'package:oppointments_sysytem/features/authentication/ui/screens/login_screen.dart';
 import 'package:oppointments_sysytem/features/onboarding/ui/screens/onboarding.dart';
 
 class RoutesConfigs{
@@ -12,7 +13,7 @@ class RoutesConfigs{
         return MaterialPageRoute(builder: (_)=>const OnboardingScreen());
       }
       case AppRoutes.login:{
-        return MaterialPageRoute(builder: (_)=> Scaffold(body: Center(child: Text("Login Screen ",style:Theme.of(_).textTheme.displayLarge ,),),));
+        return MaterialPageRoute(builder: (_)=> const LoginScreen());
       }
       default:{
         return MaterialPageRoute(builder: (_)=>

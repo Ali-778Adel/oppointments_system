@@ -32,7 +32,7 @@ class TextStyles{
 
   final TextStyle headerMediumPrimary = TextStyle(
       color: ColorPalette.primary100,
-      fontFamily: "Inter-Bold.ttf",
+      fontFamily: "assets/fonts/inter/Inter-Bold.ttf",
       fontWeight: FontWeight.w700,
       fontSize: 24.sp);
 
@@ -60,4 +60,12 @@ class TextStyles{
     fontSize: 14.sp,
     fontWeight: FontWeight.w600,
   );
+
+  final hintText=TextStyle(
+    color: ColorPalette.grey50,
+    fontFamily: "Inter-Regular.ttf",
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+  );
+
 }

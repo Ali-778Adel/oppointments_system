@@ -18,12 +18,20 @@ class LightTheme {
     return ThemeData.light().copyWith(
         primaryColor: ColorPalette.primary100,
         scaffoldBackgroundColor: ColorPalette.white,
+        inputDecorationTheme: InputDecorationTheme(
+          fillColor: ColorPalette.fillRed,
+          focusColor:ColorPalette.fillRed,
+          hoverColor: ColorPalette.fillRed
+        ),
         textTheme: TextTheme(
             headlineLarge: textStyles.headLineLarge,
             displayLarge: textStyles.headerMediumBlack,
             displayMedium: textStyles.headerMediumPrimary,
             displaySmall: textStyles.displaySmall,
             bodySmall: textStyles.bodySmall,
-            labelMedium: textStyles.buttonTextMedium));
+            labelMedium: textStyles.buttonTextMedium,
+          labelSmall: textStyles.hintText
+
+        ));
   }
 }

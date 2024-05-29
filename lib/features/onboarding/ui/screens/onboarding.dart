@@ -1,12 +1,6 @@
-import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:oppointments_sysytem/core/theming/colors/colors.dart';
-import 'package:oppointments_sysytem/core/theming/images/images.dart';
 import 'package:oppointments_sysytem/features/onboarding/ui/widgets/background_and_image_widget.dart';
 import 'package:oppointments_sysytem/features/onboarding/ui/widgets/get_started_button_widget.dart';
 import 'package:oppointments_sysytem/features/onboarding/ui/widgets/logo_label_widget.dart';
