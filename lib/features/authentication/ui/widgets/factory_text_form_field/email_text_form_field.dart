@@ -1,8 +1,9 @@
-import 'package:flutter/src/services/text_formatter.dart';
-import 'package:flutter/src/services/text_input.dart';
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:oppointments_sysytem/features/authentication/ui/widgets/factory_text_form_field/text_field_interface.dart';
 
-class EmailTextField extends AuthTextFormField1{
+class EmailTextField extends AuthTextFormField2{
   const EmailTextField({
     super.key,
     required super.textEditingController,
@@ -36,5 +37,17 @@ class EmailTextField extends AuthTextFormField1{
   TextInputType keyBoardType() {
     return TextInputType.emailAddress;
   }
+
+  @override
+  Widget ?prefixIcon() {
+return null;
+  }
+
+  @override
+  Widget? suffixIcon(StateSetter stateSetter) {
+  return null;
+  }
+
+
 
 }

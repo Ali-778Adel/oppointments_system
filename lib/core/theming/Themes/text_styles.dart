@@ -32,38 +32,38 @@ class TextStyles{
 
   final TextStyle headerMediumPrimary = TextStyle(
       color: ColorPalette.primary100,
-      fontFamily: "assets/fonts/inter/Inter-Bold.ttf",
+      fontFamily: "Inter",
       fontWeight: FontWeight.w700,
       fontSize: 24.sp);
 
   final TextStyle displaySmall = TextStyle(
       color: ColorPalette.grey70,
-      fontFamily: "Inter-Regular.ttf",
+      fontFamily: "Inter",
       fontSize: 14.sp,
       fontWeight: FontWeight.w400);
 
   final TextStyle bodyMedium = TextStyle(
       color: ColorPalette.grey70,
-      fontFamily: "Inter-Regular.ttf",
+      fontFamily: "Inter",
       fontSize: 20.sp,
       fontWeight: FontWeight.w400);
 
   final TextStyle bodySmall = TextStyle(
       color: ColorPalette.grey70,
-      fontFamily: "Inter-Regular.ttf",
+      fontFamily: "Inter",
       fontSize: 10.sp,
       fontWeight: FontWeight.w400);
 
   final buttonTextMedium = TextStyle(
     color: ColorPalette.white,
-    fontFamily: "Inter-SemiBold.ttf",
+    fontFamily: "Inter",
     fontSize: 14.sp,
     fontWeight: FontWeight.w600,
   );
 
   final hintText=TextStyle(
     color: ColorPalette.grey50,
-    fontFamily: "Inter-Regular.ttf",
+    fontFamily: "Inter",
     fontSize: 14.sp,
     fontWeight: FontWeight.w500,
   );

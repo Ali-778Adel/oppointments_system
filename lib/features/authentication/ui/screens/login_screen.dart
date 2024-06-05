@@ -9,6 +9,8 @@ import 'package:oppointments_sysytem/features/authentication/ui/widgets/factory_
 import 'package:oppointments_sysytem/features/authentication/ui/widgets/login_sign_up_button.dart';
 import 'package:oppointments_sysytem/features/authentication/ui/widgets/text_form_field.dart';
 
+import '../widgets/bottom_page_text.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -66,7 +68,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                    LoginSignUpButton(btnTxt: "Login",onTap: (){
                     formKey.currentState!.validate();
-                  },)
+                  },),
+                  SizedBox(height: 20.h,),
+                  const AuthPageBottomText()
                 ],
               ),
             ),
